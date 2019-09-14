@@ -19,7 +19,49 @@
     <main>
       <section>
         <h2 class="visually-hidden">Фильтры поиска жилья</h2>
-        <!-- Здесь будет форма  -->
+        <form action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						 <ul>
+							 <li>
+								 <label for="filter-swimming-pool">Бассейн</label>
+								 <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+							 </li>
+							 <li>
+							   <label for="filter-parking">Парковка</label>
+							   <input type="checkbox" name="parking" id="filter-parking">
+							</li>
+							 <li>
+								 <label for="filter-wi-fi">Wi-fi</label>
+								 <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+							 </li>
+						 </ul>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						  <ul>
+							  <li>
+								  <label for="filter-hotel">Гостиница</label>
+								  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+							  </li>
+							  <li>
+									<label for="filter-motel">Мотель</label>
+								  <input type="checkbox" name="motel" id="filter-motel" checked>
+							  </li>
+							  <li>
+									<label for="filter-apartments">Апартаменты</label>
+								  <input type="checkbox" name="apartments" id="filter-apartments" checked>
+								</li>
+						 </ul>
+					</fieldset>
+					<div>
+					  <label for="filter-price-range">Стоимость в сутки (р):</label>
+						<p>от 0</p>
+						<p>до 3000</p>
+					  <input type="range" name="price-range" id="filter-price-range"  min="0" max="3000" step="500">
+					</div>
+					<input type="submit" value="Показать">
+				</form>
       </section>
       <section>
         <h2 class="visually-hidden">Сортировка жилья</h2>
