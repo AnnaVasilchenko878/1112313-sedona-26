@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="main-container">
-      <header class="site-navigation">
+      <header class="header-region">
         <nav class="main-menu">
           <a class="logo" href="index.html">
             <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седона">
@@ -21,61 +21,63 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="container">
         <section class="feature-hotels">
           <h2 class="visually-hidden">Фильтры поиска жилья</h2>
           <form class="filter-hotels" action="https://echo.htmlacademy.ru" method="get">
-					<fieldset>
-						<legend>Инфраструктура:</legend>
-						 <ul>
+					  <fieldset>
+						  <legend>Инфраструктура:</legend>
+						  <ul class="choice-infrastructure">
 							 <li>
-								 <label for="filter-swimming-pool">Бассейн</label>
 								 <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+								 <label for="filter-swimming-pool">Бассейн</label>
 							 </li>
 							 <li>
-							   <label for="filter-parking">Парковка</label>
 							   <input type="checkbox" name="parking" id="filter-parking">
+							   <label for="filter-parking">Парковка</label>
 							</li>
 							 <li>
-								 <label for="filter-wi-fi">Wi-fi</label>
 								 <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+								 <label for="filter-wi-fi">Wi-fi</label>
 							 </li>
 						 </ul>
-					</fieldset>
-					<fieldset>
+					  </fieldset>
+					  <fieldset>
 						<legend>Тип жилья:</legend>
-						  <ul>
+						  <ul class="choice-house-type">
 							  <li>
-								  <label for="filter-hotel">Гостиница</label>
 								  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+								  <label for="filter-hotel">Гостиница</label>
 							  </li>
 							  <li>
-									<label for="filter-motel">Мотель</label>
 								  <input type="checkbox" name="motel" id="filter-motel" checked>
+									<label for="filter-motel">Мотель</label>
 							  </li>
 							  <li>
-									<label for="filter-apartments">Апартаменты</label>
 								  <input type="checkbox" name="apartments" id="filter-apartments" checked>
+									<label for="filter-apartments">Апартаменты</label>
 								</li>
 						 </ul>
 					</fieldset>
-					<div>
+					  <div class="price-band">
 					  <label for="filter-price-range">Стоимость в сутки (р):</label>
-						<p>от 0</p>
-						<p>до 3000</p>
-					  <input type="range" name="price-range" id="filter-price-range"  min="0" max="3000" step="500">
+            <p class="price-gamut">
+              <span>от 0</span>
+						  <span>до 3000</span>
+            </p>
+            <input type="range" name="price-range" id="filter-price-range"  min="0" max="3000" step="500">
 					</div>
-					<button type="submit">Показать</button>
-				</form>
+					  <button class="button button-filter" type="submit">Показать</button>
+				  </form>
         </section>
         <section class="sorting-results">
           <h2 class="visually-hidden">Сортировка жилья</h2>
           <span class="hotels-results">Найдено: 3</span>
           <p>Сортировка:</p>
           <ul class="sorting-name">
-            <li><a class="button" href="#">По цене</a></li>
-            <li><a class="button" href="#">По типу</a></li>
-            <li><a class="button" href="#">По рейтингу</a></li>
+            <li><a class="button-sort button-current" href="#">По цене</a></li>
+            <li><a class="button-sort" href="#">По типу</a></li>
+            <li><a class="button-sort" href="#">По рейтингу</a></li>
           </ul>
           <ul class="sorting-controls">
             <li>
@@ -90,7 +92,7 @@
             </li>
           </ul>
         </section>
-        <section>
+        <section class="result-item">
           <h2 class="visually-hidden">Результаты фильтрации</h2>
           <ul class="filter-result">
             <li>
@@ -129,8 +131,8 @@
           </ul>
         </section>
       </main>
-      <footer>
-        <p>&#35;visitsedona</p>
+      <footer class="footer-region">
+        <p class="social-tag">&#35;visitsedona</p>
         <div class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-network">
@@ -141,7 +143,7 @@
         </div>
           <p class="copyright">
             Website by
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
             </a>
           </p>
