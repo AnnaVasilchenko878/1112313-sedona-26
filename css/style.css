@@ -19,11 +19,11 @@ body {
 a {
   text-decoration: none;
 }
-.main-container {
+.container {
   background-color: #ffffff;
-  box-shadow: 0 5px 15px rgba(0, 1, 1. 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
-/* header */
+/*======HEADER=====*/
 .main-menu {
   background-color: #ffffff;
 }
@@ -42,7 +42,7 @@ a {
 .navigation-menu a:active {
   color: #000000;
 }
-/* footer */
+/*=========FOOTER=======*/
 .footer-region {
   background-color: #ffffff;
   opacity: 0.9;
@@ -59,7 +59,7 @@ a {
 .copyright {
   text-align: right;
 }
-/* index */
+/*=======INDEX========*/
 .image-container {
   background-color: #2a3a46;
   background-image: url("../img/icon-polygon.svg"), url("../img/bg-photo-sedona.jpg");
@@ -88,12 +88,15 @@ a {
   font-weight: 700;
 }
 .reason:first-child,
-.reason:nth-child(4) {
+.reason:nth-child(2) {
   color: #ffffff;
   background-color: #81b3d2;
 }
 .reason-description {
+  color: #000000;
+  background-color: #ffffff;
   list-style: none;
+
 }
 .interested-in {
   font-size: 30px;
@@ -128,6 +131,10 @@ a {
   font-weight: 700;
   line-height: 26px;
 }
+.price-band label {
+  fotn-size: 16px;
+  font-weight: 700;
+}
 .button {
   font-weight: 700;
   background-color: transparent;
@@ -148,7 +155,7 @@ a {
   background-color: #5496bd;
   opacity: 0.3;
 }
-/* hotels */
+/*======HOTELS======*/
 .current-page {
   color: #766357;
   font-weight: 700;
