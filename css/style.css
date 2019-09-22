@@ -1,10 +1,14 @@
-@font-face {
-  font-family: PT Sans;
-  src: url(/fonts/ptsans.woff),
-       url(/fonts/ptsansbold.woff),
-       url(/fonts/ptsansbold.woff2),
-       url(/fonts/ptsansbold.woff2);
+/*@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"),
+       url("/fonts/ptsansbold.woff2") format("woff2"),
+       url("/fonts/ptsansbold.woff2") format("woff2"),
+       url("/fonts/ptsans.woff") format("woff"),
+       url("/fonts/ptsansbold.woff") format ("woff");
 }
+*/
 body {
   margin: 0;
   padding: 0;
@@ -131,10 +135,6 @@ a {
   font-weight: 700;
   line-height: 26px;
 }
-.price-band label {
-  fotn-size: 16px;
-  font-weight: 700;
-}
 .button {
   font-weight: 700;
   background-color: transparent;
@@ -160,22 +160,26 @@ a {
   color: #766357;
   font-weight: 700;
 }
-.feature-hotels {
+.filters {
   color: #ffffff;
   background-image: url("../img/bg-photo-sedona.jpg");
 }
-.filter-hotels fieldset {
+.filters-fieldset {
   border: none;
 }
-.filter-hotels legend {
+.filters-form legend {
   font-size: 16px;
   font-weight: 700;
 }
-.choice-infrastructure {
+.filters-infrastructure {
   list-style: none;
 }
-.choice-house-type {
+.filters-house-type {
   list-style: none;
+}
+.price-band label {
+  font-size: 16px;
+  font-weight: 700;
 }
 .button-filter {
   color: #ffffff;
@@ -195,7 +199,7 @@ a {
 .sorting-name {
   list-style: none;
 }
-.button-sort {
+.sort-current {
   line-height: 18px;
   color: #000000;
   opacity: 0.3;

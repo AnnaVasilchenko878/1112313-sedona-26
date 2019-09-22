@@ -11,7 +11,7 @@
       <header class="header-main">
         <nav class="main-menu">
           <a class="logo" href="index.html">
-            <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седона">
+          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седона">
           </a>
           <ul class="navigation-menu">
             <li><a href="#">Информация</a></li>
@@ -22,72 +22,72 @@
         </nav>
       </header>
       <main>
-        <section class="feature-hotels">
+        <section class="filters">
           <h2 class="visually-hidden">Фильтры поиска жилья</h2>
-          <form class="filter-hotels" action="https://echo.htmlacademy.ru" method="get">
-					  <fieldset>
-						  <legend>Инфраструктура:</legend>
-						  <ul class="choice-infrastructure">
-							 <li>
-								 <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-								 <label for="filter-swimming-pool">Бассейн</label>
-							 </li>
-							 <li>
-							   <input type="checkbox" name="parking" id="filter-parking">
-							   <label for="filter-parking">Парковка</label>
-							</li>
-							 <li>
-								 <input type="checkbox" name="wi-fi" id="filter-wi-fi">
-								 <label for="filter-wi-fi">Wi-fi</label>
-							 </li>
-						 </ul>
-					  </fieldset>
-					  <fieldset>
-						<legend>Тип жилья:</legend>
-						  <ul class="choice-house-type">
-							  <li>
-								  <input type="checkbox" name="hotel" id="filter-hotel" checked>
-								  <label for="filter-hotel">Гостиница</label>
-							  </li>
-							  <li>
-								  <input type="checkbox" name="motel" id="filter-motel" checked>
-									<label for="filter-motel">Мотель</label>
-							  </li>
-							  <li>
-								  <input type="checkbox" name="apartments" id="filter-apartments" checked>
-									<label for="filter-apartments">Апартаменты</label>
-								</li>
-						 </ul>
-					</fieldset>
-					  <div class="price-band">
-					  <label for="filter-price-range">Стоимость в сутки (р):</label>
-            <p class="price-gamut">
-              <span>от 0</span>
-						  <span>до 3000</span>
-            </p>
-            <input type="range" name="price-range" id="filter-price-range"  min="0" max="3000" step="500">
-					</div>
-					  <button class="button button-filter" type="submit">Показать</button>
-				  </form>
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filters-fieldset">
+              <legend>Инфраструктура:</legend>
+              <ul class="filters-infrastructure">
+                <li>
+                  <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                  <label for="filter-swimming-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">Wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filters-fieldset">
+              <legend>Тип жилья:</legend>
+              <ul class="filters-house-type">
+                <li>
+                  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="price-band">
+              <label for="filter-price-range">Стоимость в сутки (р):</label>
+              <p class="filter-price-gamut">
+                <span>от 0</span>
+                <span>до 3000</span>
+              </p>
+              <input type="range" name="price-range" id="filter-price-range"  min="0" max="3000" step="500">
+            </div>
+            <button class="button button-filter" type="submit">Показать</button>
+          </form>
         </section>
         <div class="sorting-results">
           <h2 class="visually-hidden">Сортировка жилья</h2>
           <span class="hotels-results">Найдено: 3</span>
           <p>Сортировка:</p>
           <ul class="sorting-name">
-            <li><a class="button-sort button-current" href="#">По цене</a></li>
-            <li><a class="button-sort" href="#">По типу</a></li>
-            <li><a class="button-sort" href="#">По рейтингу</a></li>
+            <li><a class="sort sort-by-price" href="#">По цене</a></li>
+            <li><a class="sort sort-by-type" href="#">По типу</a></li>
+            <li><a class="sort sort-by-priority" href="#">По рейтингу</a></li>
           </ul>
           <ul class="sorting-controls">
             <li>
               <a class="button" href="#">
-                <img src="img/icon-triangle-up.svg" width="11" height="10" alt="Сортировка по возрастанию">
+              <img src="img/icon-triangle-up.svg" width="11" height="10" alt="Сортировка по возрастанию">
               </a>
             </li>
             <li>
               <a class="button" href="#">
-                <img src="img/icon-triangle-down.svg" width="11" height="10" alt="Сортировка по убыванию">
+              <img src="img/icon-triangle-down.svg" width="11" height="10" alt="Сортировка по убыванию">
               </a>
             </li>
           </ul>
@@ -141,13 +141,15 @@
             <li><a class="button-social" href="#">Ютуб</a></li>
           </ul>
         </div>
-          <p class="copyright">
-            Website by
-            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-            </a>
-          </p>
+        <p class="copyright">
+          Website by
+          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+          </a>
+        </p>
       </footer>
     </div>
   </body>
 </html>
+COPY TO CLIPBOARD	 SELECT ALL
+© FreeFormatter.com - FREEFORMATTER is a d/b/a of 10174785 Canada Inc. - Copyright Notic
