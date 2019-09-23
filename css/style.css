@@ -71,37 +71,37 @@ a {
   text-align: right;
 }
 /*=======INDEX========*/
-.image-container {
+.intro {
   background-color: #2a3a46;
   background-image: url("../img/icon-polygon.svg"), url("../img/bg-photo-sedona.jpg");
   background-size: auto, cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.preview {
+.intro-title {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
 }
-.best-reasons {
+.intro-text {
   color:#333333;
   text-align: center;
 }
-.reasons {
-  list-style: none;
-}
-.reason {
+.advantage-item {
   text-align: center;
 }
-.reason h3 {
+.advantage-item h3 {
   font-size: 21px;
   font-weight: 700;
 }
-.reason:first-child,
-.reason:nth-child(2) {
+.advantage-item:first-child,
+.advantage-item:nth-child(2):not(.sublist) {
   color: #ffffff;
   background-color: #81b3d2;
+}
+.advantage-item .sublist {
+  color: #eeeeee;
 }
 .reason-description {
   color: #000000;
