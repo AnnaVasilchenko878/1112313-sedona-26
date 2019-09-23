@@ -27,7 +27,7 @@
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-fieldset">
               <legend>Инфраструктура:</legend>
-              <ul class="filters-infrastructure">
+              <ul class="filters-list">
                 <li>
                   <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
                   <label for="filter-swimming-pool">Бассейн</label>
@@ -44,7 +44,7 @@
             </fieldset>
             <fieldset class="filters-fieldset">
               <legend>Тип жилья:</legend>
-              <ul class="filters-house-type">
+              <ul class="filters-list">
                 <li>
                   <input type="checkbox" name="hotel" id="filter-hotel" checked>
                   <label for="filter-hotel">Гостиница</label>
@@ -59,43 +59,50 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="price-band">
-              <label for="filter-price-range">Стоимость в сутки (р):</label>
-              <p class="filter-price-gamut">
-                <span>от 0</span>
-                <span>до 3000</span>
-              </p>
-              <input type="range" name="price-range" id="filter-price-range"  min="0" max="3000" step="500">
+            <div class="price-wrapper">
+              <div class="price-band">
+                <label for="filter-price-range">Стоимость в сутки (р):</label>
+                <p class="filter-price-gamut">
+                  <span>от 0</span>
+                  <span>до 3000</span>
+                </p>
+                <input type="range" name="price-range" id="filter-price-range"  min="0" max="3000" step="500">
+              </div>
+              <button class="button button-filter" type="submit">Показать</button>
             </div>
-            <button class="button button-filter" type="submit">Показать</button>
           </form>
         </section>
         <div class="sorting-results">
-          <h2 class="visually-hidden">Сортировка жилья</h2>
           <span class="hotels-results">Найдено: 3</span>
           <p>Сортировка:</p>
           <ul class="sorting-name">
-            <li><a class="sort sort-by-price" href="#">По цене</a></li>
-            <li><a class="sort sort-by-type" href="#">По типу</a></li>
-            <li><a class="sort sort-by-priority" href="#">По рейтингу</a></li>
+            <li>
+              <a class="sort-button sort-by-price" href="#">По цене</a>
+            </li>
+            <li>
+              <a class="sort-button sort-by-type" href="#">По типу</a>
+            </li>
+            <li>
+              <a class="sort-button sort-by-priority" href="#">По рейтингу</a>
+            </li>
           </ul>
           <ul class="sorting-controls">
             <li>
-              <a class="button" href="#">
-              <img src="img/icon-triangle-up.svg" width="11" height="10" alt="Сортировка по возрастанию">
+              <a class="sort-arrow" href="#">
+                <img src="img/icon-triangle-up.svg" width="11" height="10" alt="Сортировка по возрастанию">
               </a>
             </li>
             <li>
-              <a class="button" href="#">
-              <img src="img/icon-triangle-down.svg" width="11" height="10" alt="Сортировка по убыванию">
+              <a class="sort-arrow" href="#">
+                <img src="img/icon-triangle-down.svg" width="11" height="10" alt="Сортировка по убыванию">
               </a>
             </li>
           </ul>
         </div>
-        <section class="result-item">
+        <section class="results">
           <h2 class="visually-hidden">Результаты фильтрации</h2>
-          <ul class="filter-result">
-            <li>
+          <ul class="result-list">
+            <li class="result-item hotel">
               <img src="img/amara-resort-spa-hotels.jpg" width="135" height="90" alt="Гостиница Amara resort &#38; spa">
               <h3>
                 <a class="hotel-name" href="#">Amara resort &#38; SPA</a>
@@ -106,7 +113,7 @@
               <a class="button button-describe" href="#">Подробнее</a>
               <a class="button button-booking" href="#">Забронировать</a>
             </li>
-            <li>
+            <li class="result-item">
               <img src="img/desert-quail-inn-hotels.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
               <h3>
                 <a class="hotel-name" href="#">Desert Quail Inn</a>
@@ -117,7 +124,7 @@
               <a class="button button-describe" href="#">Подробнее</a>
               <a class="button button-booking" href="#">Забронировать</a>
             </li>
-            <li>
+            <li class="result-item">
               <img src="img/villas-at-poco-diablo-hotels.jpg" width="135" height="90" alt="Aпартаменты Villas At Poco Diablo">
               <h3>
                 <a class="hotel-name" href="#">Villas At Poco Diablo</a>
@@ -131,25 +138,23 @@
           </ul>
         </section>
       </main>
-      <footer class="footer-region">
+      <footer class="footer-main">
         <p class="social-tag">&#35;visitsedona</p>
-        <div class="footer-social">
+        <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-network">
             <li><a class="button-social" href="#">Твитер</a></li>
             <li><a class="button-social" href="#">Фэйсбук</a></li>
             <li><a class="button-social" href="#">Ютуб</a></li>
           </ul>
-        </div>
+        </section>
         <p class="copyright">
           Website by
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
           </a>
         </p>
       </footer>
     </div>
   </body>
 </html>
-COPY TO CLIPBOARD	 SELECT ALL
-© FreeFormatter.com - FREEFORMATTER is a d/b/a of 10174785 Canada Inc. - Copyright Notic
