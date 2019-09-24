@@ -103,6 +103,9 @@ a {
   color: #ffffff;
   background-color: #81b3d2;
 }
+.advantage-sublist {
+  list-style: none;
+}
 .advantage-item .sublist {
   background-color: #eeeeee;
   color: #000000;
@@ -198,6 +201,9 @@ a {
   font-size: 21px;
   font-weight: 700;
 }
+.result-list {
+  list-style: none;
+}
 .sorting-name {
   list-style: none;
 }
@@ -207,6 +213,7 @@ a {
   opacity: 0.3;
   border-bottom: 2px dotted #81b3d2;
 }
+
 .sort-by-price {
   color: #81b3d2;
   border-bottom: none;
