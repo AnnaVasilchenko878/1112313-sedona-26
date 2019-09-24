@@ -37,9 +37,15 @@ a {
 /*======HEADER=====*/
 .main-menu {
   background-color: #ffffff;
+  min-height:
 }
 .navigation-menu {
   list-style: none;
+  width: 1200px;
+  min-height: 56px;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .navigation-menu a {
   font-weight: 700;
@@ -55,28 +61,49 @@ a {
 }
 /*=========FOOTER=======*/
 .footer-main {
+  margin: 0;
+  margin-top: 78px;
+  padding: 39px 101px;
+  width: 998px;
+  min-height: 120px;
   background-color: #ffffff;
   opacity: 0.9;
 }
+.footer-container {
+  display: flex;
+}
 .social-tag {
+ margin-right: 271px;
+ width: 136px;
+ min-height: 16px;
  font-size: 21px;
  font-weight: 700;
  line-height: 26px;
- text-align: left;
+}
+.footer-social {
+  width: 150px;
+  min-height: 48px;
 }
 .social-network {
   list-style: none;
 }
 .footer-copyright {
-  text-align: right;
+  margin-left: auto;
+  width: 197px;
+  min-height: 41px;
 }
 /*=======INDEX========*/
 .intro {
+  width: 1200px;
+  min-height: 780px;
   background-color: #2a3a46;
   background-image: url("../img/icon-polygon.svg"), url("../img/bg-photo-sedona.jpg");
   background-size: auto, cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
+.intro-container {
+  background-color: #ffffff;
 }
 .intro-title {
   font-size: 21px;
@@ -120,7 +147,14 @@ a {
   text-align: center;
   line-height: 24px;
 }
+.hotel-search {
+  width: 568px;
+  min-height: 48px;
+  margin: 0 auto;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
 .form-title {
+  padding: 33px 139px;
   font-size: 21px;
   color: #ffffff;
   background-color: #766357;
@@ -128,6 +162,11 @@ a {
 .form-title:hover,
 .form-title:focus {
   background-color: #604e43;
+}
+.form-inputs {
+  width: 348px;
+  max-height: 286px;
+  padding: 56px;;
 }
 .hotel-search input {
   font-weight: 700;
@@ -169,10 +208,17 @@ a {
   font-weight: 700;
 }
 .filters {
+  width: 1200px;
+  min-height: 215px;
   color: #ffffff;
   background-image: url("../img/bg-photo-sedona.jpg");
 }
+.form-container {
+  padding: 31px 72px;
+}
 .filters-fieldset {
+  width: 160px;
+  min-height: 157px;
   border: none;
 }
 .filters-legend {
@@ -181,6 +227,10 @@ a {
 }
 .filters-list {
   list-style: none;
+}
+.price-band {
+  width: 318px;
+  min-height: 157px;
 }
 .price-band label {
   font-size: 16px;
@@ -202,7 +252,13 @@ a {
   font-weight: 700;
 }
 .result-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+.result-item {
+  padding: 30px 72px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .sorting-name {
   list-style: none;

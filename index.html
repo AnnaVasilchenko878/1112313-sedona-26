@@ -25,9 +25,11 @@
         <section class="intro">
           <h1 class="visually-hidden">Sedona</h1>
           <img class="intro-image" src="img/welcome-to-sedona.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona &#171;Because the Grand Canyone sucks!&#187;">
-          <p class="intro-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="intro-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </section>
+          <div class="intro-container">
+            <p class="intro-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="intro-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            </div>
+          </section>
         <section class="advantage">
           <h2 class="visually-hidden">Причины</h2>
           <ol class="advantage-list">
@@ -82,57 +84,63 @@
         </section>
         <section class="search-hotel">
           <h2 class="visually-hidden">Выбор гостинницы в Седоне</h2>
-          <p class="search-question">Заинтересовались?</p>
-          <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="search-question">Заинтересовались?</p>
+            <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          </div>
           <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get">
             <h3 class="form-title">Поиск гостиницы в Седоне</h3>
-            <p>
+            <div class="form-inputs">
+              <p>
               <label for="date-arrival">Дата заезда:</label>
               <input type="text" name="date-arrival" id="date-arrival" placeholder="24 Апреля 2017">
               <button class="button-calendar" type="button">
                 <img src="img/icon-calendar.svg" width="21" height="22" alt="Календарь для выбора даты заезда">
               </button>
-            </p>
-            <p>
+              </p>
+              <p>
               <label for="date-of-departure">Дата выезда:</label>
               <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
               <button class="button-calendar" type="button">
                 <img src="img/icon-calendar.svg" width="21" height="22" alt="Календарь для выбора даты выезда">
               </button>
-            </p>
-            <p>
+              </p>
+              <p>
               <label for="number-of-aduls">Взрослые:</label>
               <input type="text" name="number-of-aduls" id="number-of-aduls" placeholder="2">
-            </p>
-            <p>
+              </p>
+              <p>
               <label for="number-of-children">Дети:</label>
               <input type="text" name="number-of-children" id="number-of-children" placeholder="0">
-            </p>
-            <button class="button-search" type="submit">Найти</button>
+              </p>
+              <button class="button-search" type="submit">Найти</button>
+            </div>
           </form>
         </section>
       </main>
       <footer class="footer-main">
-        <p class="social-tag">&#35;visitsedona</p>
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social-network">
-            <li>
-              <a class="button-social" href="#">Твитер</a>
-            </li>
-            <li>
-              <a class="button-social" href="#">Фэйсбук</a>
-            </li>
-            <li>
-              <a class="button-social" href="#">Ютуб</a>
-            </li>
-          </ul>
-          <p class="footer-copyright">
-            Website by
-            <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-            </a>
-          </p>
+        <div class="footer-container">
+            <p class="social-tag">&#35;visitsedona</p>
+            <section class="footer-social">
+              <h2 class="visually-hidden">Социальные сети</h2>
+              <ul class="social-network">
+                <li>
+                  <a class="button-social" href="#">Твитер</a>
+                </li>
+                <li>
+                  <a class="button-social" href="#">Фэйсбук</a>
+                </li>
+                <li>
+                  <a class="button-social" href="#">Ютуб</a>
+                </li>
+             </ul>
+            </section>
+            <p class="footer-copyright">
+              Website by
+              <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+              </a>
+            </p>
+        </div>
        </footer>
      </div>
    </body>
