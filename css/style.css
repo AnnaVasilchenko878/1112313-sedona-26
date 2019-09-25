@@ -1,15 +1,17 @@
  @font-face {
   font-family: "PT Sans";
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+
   src: local("PT Sans"),
        url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
   font-family: "PT Sans";
-  font-style: normal;
   font-weight: 700;
-  src: local ("PT Sans");
+  font-style: normal;
+
+  src: local ("PT Sans"),
       url("../fonts/ptsansbold.woff2") format("woff2"),
       url("../fonts/ptsansbold.woff2") format("woff2"),
       url("../fonts/ptsansbold.woff") format ("woff");
@@ -17,13 +19,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400px;
+
   text-transform: uppercase;
+
   color: #000000;
   background-color: #f2f2f2;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 21px;
 }
 a {
   text-decoration: none;
@@ -31,26 +36,30 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+
   background-color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 /*======HEADER=====*/
 .main-menu {
+  min-height: auto;
+
   background-color: #ffffff;
-  min-height:
 }
 .navigation-menu {
-  list-style: none;
-  width: 1200px;
-  min-height: 56px;
   display: flex;
+
+  min-height: 56px;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 .navigation-menu a {
+  color: #000000;
+
   font-weight: 700;
   line-height: 26px;
-  color: #000000;
 }
 .navigation-menu a:hover,
 .navigation-menu a:focus {
@@ -61,21 +70,23 @@ a {
 }
 /*=========FOOTER=======*/
 .footer-main {
+  width: 998px;
+  min-height: 120px;
   margin: 0;
   margin-top: 78px;
   padding: 39px 101px;
-  width: 998px;
-  min-height: 120px;
-  background-color: #ffffff;
+
   opacity: 0.9;
+  background-color: #ffffff;
 }
-.footer-container {
+.footer-wrapper {
   display: flex;
 }
 .social-tag {
- margin-right: 271px;
  width: 136px;
  min-height: 16px;
+ margin-right: 271px;
+
  font-size: 21px;
  font-weight: 700;
  line-height: 26px;
@@ -88,32 +99,35 @@ a {
   list-style: none;
 }
 .footer-copyright {
-  margin-left: auto;
   width: 197px;
   min-height: 41px;
+  margin-left: auto;
 }
 /*=======INDEX========*/
 .intro {
   width: 1200px;
   min-height: 780px;
+
   background-color: #2a3a46;
   background-image: url("../img/icon-polygon.svg"), url("../img/bg-photo-sedona.jpg");
-  background-size: auto, cover;
-  background-position: bottom;
   background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto, cover;
 }
-.intro-container {
+.intro-wrapper {
   background-color: #ffffff;
 }
 .intro-title {
+  text-align: center;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  text-align: center;
 }
 .intro-text {
-  color:#333333;
   text-align: center;
+
+  color:#333333;
 }
 .advantage-list {
   list-style: none;
@@ -134,30 +148,35 @@ a {
   list-style: none;
 }
 .advantage-item .sublist {
-  background-color: #eeeeee;
   color: #000000;
+  background-color: #eeeeee;
 }
 .search-question {
+  text-align: center;
+
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  text-align: center;
 }
 .search-text {
   text-align: center;
+
   line-height: 24px;
 }
 .hotel-search {
   width: 568px;
   min-height: 48px;
   margin: 0 auto;
+
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 .form-title {
   padding: 33px 139px;
-  font-size: 21px;
+
   color: #ffffff;
   background-color: #766357;
+
+  font-size: 21px;
 }
 .form-title:hover,
 .form-title:focus {
@@ -169,10 +188,12 @@ a {
   padding: 56px;;
 }
 .hotel-search input {
-  font-weight: 700;
   text-transform:uppercase;
-  background-color: #f2f2f2;
+
   border: none;
+  background-color: #f2f2f2;
+
+  font-weight: 700;
 }
 .hotel-search input:hover,
 .hotel-search input:focus {
@@ -183,43 +204,51 @@ a {
   line-height: 26px;
 }
 .button-calendar {
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
 .button-search {
-  font-size: 21px;
   text-transform: uppercase;
+
   color: #ffffff;
-  background-color: #81b3d2;
   border: none;
+  background-color: #81b3d2;
+
+  font-size: 21px;
 }
 .button-search:hover,
 .button-search:focus {
   background-color: #669ec0;
 }
 .button-search:active {
+  opacity: 0.3;
   color: #ffffff;
   background-color: #5496bd;
-  opacity: 0.3;
 }
 /*======HOTELS======*/
 .current-page {
   color: #766357;
+
   font-weight: 700;
 }
 .filters {
   width: 1200px;
   min-height: 215px;
+
   color: #ffffff;
   background-image: url("../img/bg-photo-sedona.jpg");
 }
-.form-container {
+.form-wrapper {
   padding: 31px 72px;
 }
 .filters-fieldset {
   width: 160px;
   min-height: 157px;
+
   border: none;
+
+  font-size: 16px;
+  font-weight: 700;
 }
 .filters-legend {
   font-size: 16px;
@@ -238,63 +267,69 @@ a {
 }
 .button-filter {
   color: #ffffff;
-  font-weight: 400;
-  background-color: transparent;
   border: 2px solid #ffffff;
+  background-color: transparent;
+
+  font-weight: 400;
 }
 .button-filter:hover,
 .button-filter:focus {
   color: #000000;
   background-color: #ffffff;
 }
-.hotels-results {
+.filter-result-amount {
   font-size: 21px;
   font-weight: 700;
 }
 .result-list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 .result-item {
   padding: 30px 72px;
+
   border-bottom: 1px solid #e5e5e5;
 }
-.sorting-name {
+.sort-by-type {
   list-style: none;
 }
 .sort-button {
-  line-height: 18px;
-  color: #000000;
   opacity: 0.3;
+  color: #000000;
   border-bottom: 2px dotted #81b3d2;
+
+  line-height: 18px;
 }
 
 .sort-by-price {
+  opacity: 1;
   color: #81b3d2;
   border-bottom: none;
-  opacity: 1;
 }
-.sorting-controls {
+.sort-by-priority {
   list-style: none;
 }
-.hotel-name {
+.hotel-link {
+  color: #000000;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  color: #000000;
 }
-.hotel-name:hover,
-.hotel-name:focus {
+.hotel-link:hover,
+.hotel-link:focus {
   color: #81b3d2;
 }
-.hotel-name:active {
-  color: #000000;
+.hotel-link:active {
   opacity: 0.3;
+  color: #000000;
 }
 .rating {
-  color: #666666;
   text-align: right;
+
+  color: #666666;
   background-color: #f2f2f2;
 }
 .button-describe {
@@ -306,9 +341,9 @@ a {
   background-color: #669ec0;
 }
 .button-describe:active {
+  opacity: 0.3;
   color: #ffffff;
   background-color: #669ec0;
-  opacity: 0.3;
 }
 .button-booking {
   color: #ffffff;
@@ -319,7 +354,7 @@ a {
   background-color: #604e43;
 }
 .button-booking:active {
+  opacity: 0.3;
   color: #ffffff;
   background-color: #604e43;
-  opacity: 0.3;
 }
