@@ -16,6 +16,14 @@
       url("../fonts/ptsansbold.woff2") format("woff2"),
       url("../fonts/ptsansbold.woff") format ("woff");
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   padding: 0;
@@ -33,6 +41,13 @@ body {
 a {
   text-decoration: none;
 }
+.reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -48,15 +63,20 @@ a {
 }
 .navigation-menu {
   display: flex;
+  justify-content: space-around;
 
   min-height: 56px;
   margin: 0;
   padding: 0;
 
-  list-style: none;
+}
+.navigation-menu li {
+  width: 239px;
+  min-height: 56px;
 }
 .navigation-menu a {
   color: #000000;
+  order: 1;
 
   font-weight: 700;
   line-height: 26px;
@@ -70,7 +90,6 @@ a {
 }
 /*=========FOOTER=======*/
 .footer-main {
-  width: 998px;
   min-height: 120px;
   margin: 0;
   margin-top: 78px;
@@ -81,25 +100,21 @@ a {
 }
 .footer-wrapper {
   display: flex;
+  justify-content: space-around;
 }
 .social-tag {
- width: 136px;
+ width: 400px;
  min-height: 16px;
- margin-right: 271px;
-
  font-size: 21px;
  font-weight: 700;
  line-height: 26px;
 }
 .footer-social {
-  width: 150px;
+  width: 400px;
   min-height: 48px;
 }
-.social-network {
-  list-style: none;
-}
 .footer-copyright {
-  width: 197px;
+  width: 400px;
   min-height: 41px;
   margin-left: auto;
 }
@@ -129,9 +144,6 @@ a {
 
   color:#333333;
 }
-.advantage-list {
-  list-style: none;
-}
 .advantage-item {
   text-align: center;
 }
@@ -143,9 +155,6 @@ a {
 .advantage-item:nth-child(2){
   color: #ffffff;
   background-color: #81b3d2;
-}
-.advantage-sublist {
-  list-style: none;
 }
 .advantage-item .sublist {
   color: #000000;
@@ -254,9 +263,6 @@ a {
   font-size: 16px;
   font-weight: 700;
 }
-.filters-list {
-  list-style: none;
-}
 .price-band {
   width: 318px;
   min-height: 157px;
@@ -284,16 +290,11 @@ a {
 .result-list {
   margin: 0;
   padding: 0;
-
-  list-style: none;
 }
 .result-item {
   padding: 30px 72px;
 
   border-bottom: 1px solid #e5e5e5;
-}
-.sort-by-type {
-  list-style: none;
 }
 .sort-button {
   opacity: 0.3;
@@ -307,9 +308,6 @@ a {
   opacity: 1;
   color: #81b3d2;
   border-bottom: none;
-}
-.sort-by-priority {
-  list-style: none;
 }
 .hotel-link {
   color: #000000;
