@@ -35,7 +35,7 @@ body {
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 21px;
 }
 a {
@@ -321,20 +321,28 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
+.sorting-results {
+  display: flex;
+  min-height: 87px;
+  border-bottom: 1px solid #e5e5e5;
+}
 .filter-result-amount {
   width: 117px;
   line-height: 22px;
   font-size: 21px;
   font-weight: 700;
+  margin-left: 72px;
+  margin-right: 49px;
 }
 .sorting-title {
+  width: 75px;
+  margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
 }
 .sort-by-type {
   width: 282px;
   display: flex;
-  background-color: orange;
 }
 .sort-by-type li:first-child~li {
   margin-left: 33px;
@@ -347,10 +355,8 @@ a {
 }
 .sort-by-priority {
   width: 34px;
-  background-color: orange;
   display: flex;
 }
-/* TODO: что за result-list */
 .result-list {
   margin: 0;
   padding: 0;
@@ -359,6 +365,15 @@ a {
   padding: 30px 72px;
 
   border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+.result-image {
+  width: 135px;
+  height: 90px;
+}
+.result-wrapper {
+  width: 260px;
+  min-height: 90px;
 }
 .sort-button {
   opacity: 0.3;
@@ -388,7 +403,8 @@ a {
   color: #000000;
 }
 .rating {
-  text-align: right;
+  width: 100px;
+  min-height: 27px;
 
   color: #666666;
   background-color: #f2f2f2;
