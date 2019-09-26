@@ -167,8 +167,7 @@ a {
   font-size: 21px;
   font-weight: 700;
 }
-.advantage-item:first-child,
-.advantage-item:nth-child(2){
+.advantage-item:first-child {
   color: #ffffff;
   background-color: #81b3d2;
 }
