@@ -13,8 +13,6 @@
 
   src: local ("PT Sans"),
       url("../fonts/ptsansbold.woff2") format("woff2"),
-      url("../fonts/ptsansbold.woff2") format("woff2"),
-      url("../fonts/ptsansbold.woff") format ("woff");
 }
 html {
   box-sizing: border-box;
@@ -49,13 +47,16 @@ a {
 }
 .visually-hidden {
   position: absolute;
+
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0,0,0,0);
-  overflow: hidden;
+
+  border: 0;
 }
 .container {
   width: 1200px;
@@ -162,17 +163,21 @@ a {
   min-height: 216px;
   /* не уверенна что это правильное решение но при
   margin-bottom: 0px блок не двигается*/
-  margin-top: 150px;
+  margin-top: 149px;
   padding-top: 61px;
+
   background-color: #ffffff;
 }
 
-/* TODO: параграф двигается вместе с блоком */
+/* TODO: параграф двигается вместе с блоком пришлось
+его обернуть в div */
 .intro-title {
+  width: 440px;
   margin: 0 auto;
   margin-bottom: 38px;
-  width: 440px;
+
   text-align: center;
+
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -217,8 +222,8 @@ a {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 .form-title {
-  padding: 33px 139px;
   min-height: 86px;
+  padding: 33px 139px;
 
   color: #ffffff;
   background-color: #766357;
@@ -323,26 +328,31 @@ a {
 }
 .sorting-results {
   display: flex;
+
   min-height: 87px;
+
   border-bottom: 1px solid #e5e5e5;
 }
 .filter-result-amount {
   width: 117px;
-  line-height: 22px;
+  margin-right: 49px;
+  margin-left: 72px;
+
   font-size: 21px;
   font-weight: 700;
-  margin-left: 72px;
-  margin-right: 49px;
+  line-height: 22px;
 }
 .sorting-title {
   width: 75px;
   margin-right: 40px;
+
   font-size: 12px;
   line-height: 18px;
 }
 .sort-by-type {
-  width: 282px;
   display: flex;
+
+  width: 282px;
 }
 .sort-by-type li:first-child~li {
   margin-left: 33px;
@@ -351,21 +361,24 @@ a {
   opacity: 0.3;
   color: #000000;
   border-bottom: 2px dotted #81b3d2;
+
   line-height: 18px;
 }
 .sort-by-priority {
-  width: 34px;
   display: flex;
+
+  width: 34px;
 }
 .result-list {
   margin: 0;
   padding: 0;
 }
 .result-item {
+  display: flex;
+
   padding: 30px 72px;
 
   border-bottom: 1px solid #e5e5e5;
-  display: flex;
 }
 .result-image {
   width: 135px;
