@@ -66,6 +66,11 @@ a {
   background-color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
+.container-background-map {
+  background-image: url("../img/map-hotels-in-sedona.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 /*======HEADER=====*/
 .main-menu {
   display: flex;
@@ -115,41 +120,42 @@ a {
 /*=========FOOTER=======*/
 .footer-main {
   display: flex;
-  justify-content: space-around;
 
   min-height: 48px;
   margin: 0;
   margin-top: 81px;
   padding: 20px 132px;
-  background-color: green;
-  /* background-color: rgba(255, 255, 255, 0.9); */
+  background-color: #ffffff;
+}
+.background-opacity {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .social-tag {
- width: 400px;
- min-height: 16px;
-
- font-size: 21px;
- font-weight: 700;
- line-height: 26px;
- margin-right: 260px;
- margin-left: 3px;
+  width: 400px;
+  min-height: 16px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 26px;
+  margin-right: 254px;
+  margin-left: 1px;
 }
 .footer-social {
   width: 400px;
-  min-height: 48px;
+  min-height: 54px;
 }
 .social-network {
   display: flex;
-  margin-top: 9px;
-  margin-right: 228px;
+  margin-top: 16px;
+  margin-right: 180px;
 }
 .button-social {
-  width: 45px;
-  height: 48px;
+  width: 46px;
+  height: 47px;
   display: block;
   background-color: #81b3d2;
   margin-right: 6px;
-  padding: 25px 15px;
+  padding: 14px 17px;
 }
 .button-social:hover
 .button-social:focus {
@@ -157,10 +163,17 @@ a {
 }
 .footer-copyright {
   min-height: 41px;
-  width: 197px;
+  width: 400px;
   display: flex;
+  margin-top: 18px;
 }
-
+.footer-copyright span {
+  margin-top: 12px;
+  margin-right: -17px;
+  margin-left: 43px;
+  display: block;
+  width: 100px;
+}
 /*=======INDEX========*/
 .intro {
   min-height: 719px;
@@ -253,7 +266,7 @@ a {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 .search-text {
   text-align: center;
@@ -272,7 +285,10 @@ a {
 }
 .form-title {
   min-height: 36px;
-  padding: 32px 137px;
+  padding-left: 137px;
+  padding-right: 137px;
+  padding-top: 32px;
+  padding-bottom: 60px;
 
   color: #ffffff;
   background-color: #766357;
@@ -286,9 +302,10 @@ a {
 .form-inputs {
   width: 566px;
   min-height: 200px;
-  padding-top: 68px;
+  padding-top: 40px;
   padding-right: 49px;
   padding-left: 56px;
+  background-color: #ffffff;
 }
 .form-inputs:first-child {
   margin-bottom: 15px;
@@ -320,7 +337,7 @@ a {
   margin-bottom: 31px;
 }
 .input-date-wrapper {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .button-calendar {
   border: none;
@@ -334,7 +351,7 @@ a {
 }
 .input-number-wrapper {
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
 }
 .input-number-wrapper p {
   width: 190px;
@@ -368,7 +385,8 @@ a {
 
   font-size: 21px;
   width: 100%;
-  height: 53px;
+  height: 55px;
+  margin-bottom: 53px;
 }
 .button-search:hover,
 .button-search:focus {
@@ -393,10 +411,16 @@ a {
   background-image: url("../img/bg-photo-sedona.jpg");
 }
 .form-wrapper {
-  padding: 31px 72px;
+  padding: 20px 72px;
+  display: flex;
+}
+.form-fielsed-wrapper {
+  width: 400px;
+  background-color: green;
+  display: flex;
 }
 .filters-fieldset {
-  width: 160px;
+  width: 200px;
   min-height: 157px;
 
   border: none;
@@ -407,6 +431,10 @@ a {
 .filters-legend {
   font-size: 16px;
   font-weight: 700;
+}
+.price-wrapper {
+  width: 400px;
+  background-color: grey;
 }
 .price-band {
   width: 318px;
@@ -471,24 +499,38 @@ a {
 
   width: 34px;
 }
-.result-list {
-  margin: 0;
-  padding: 0;
-}
 .result-item {
   display: flex;
-
-  padding: 30px 72px;
+  position: relative;
+  padding: 29px 72px;
 
   border-bottom: 1px solid #e5e5e5;
+}
+.result-item:after {
+  content: " ";
+  width: 90px;
+  height: 17px;
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  left: 1037px;
 }
 .result-image {
   width: 135px;
   height: 90px;
+  margin-top: 1px;
+  margin-right: 30px;
 }
 .result-wrapper {
   width: 260px;
   min-height: 90px;
+}
+.result-title {
+  margin-top: -3px; 
+  margin-bottom: 7px;
+}
+.results-wrapper h3+span {
+  margin-right: 36px;
 }
 .sort-button {
   opacity: 0.3;
@@ -518,15 +560,20 @@ a {
   color: #000000;
 }
 .rating {
-  width: 100px;
-  min-height: 27px;
-
   color: #666666;
   background-color: #f2f2f2;
+  position: absolute;
+  left: 1037px;
+  top: 96px;
+}
+.result-item-button {
+  margin-top: 17px;
 }
 .button-describe {
   color: #ffffff;
   background-color: #81b3d2;
+  padding: 6px 16px;
+  margin-right: 4px;
 }
 .button-describe:hover,
 .button-describe:focus {
@@ -540,6 +587,7 @@ a {
 .button-booking {
   color: #ffffff;
   background-color: #766357;
+  padding: 6px 17px;
 }
 .button-booking:hover,
 .button-booking:focus {
