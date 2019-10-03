@@ -1,18 +1,18 @@
  @font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  font-family: "PT Sans";
 
   src: local("PT Sans"),
-       url("../fonts/ptsans.woff") format("woff");
+  url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
-  font-family: "PT Sans";
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
+  font-family: "PT Sans";
 
   src: local ("PT Sans"),
-      url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff2") format("woff2"),;
 }
 html {
   box-sizing: border-box;
@@ -26,15 +26,14 @@ body {
   margin: 0;
   padding: 0;
 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
   text-transform: uppercase;
 
-  color: #000000;
   background-color: #f2f2f2;
-
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
 }
 a {
   text-decoration: none;
@@ -45,18 +44,21 @@ a {
 
   list-style: none;
 }
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-
-  overflow: hidden;
-  clip: rect(0,0,0,0);
 
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
+  overflow: hidden;
 
   border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
 }
 .container {
   width: 1200px;
@@ -68,41 +70,49 @@ a {
 /*======HEADER=====*/
 .main-menu {
   display: flex;
-  justify-content: space-around;
-
   min-height: 56px;
-
   background-color: #ffffff;
 }
-.logo {
+.logo img {
   position: absolute;
-
   display: block;
-
-  width: 239px;
+  width: 150px;
+  top: -1px;
+  left: 878px;
 
   text-align: center;
 }
 .navigation-menu {
   display: flex;
-  justify-content: space-between;
-
+  flex-wrap: wrap;
   min-height: 12px;
   margin: 0;
   padding: 0;
 }
 .navigation-menu li {
-  width: 239px;
+  width: 300px;
   min-height: 56px;
-}
-.navigation-menu li:nth-child(3) {
-  margin-left: 239px;
+  margin: 0;
+  padding: 0;
 }
 .navigation-menu a {
-  color: #000000;
-
+  font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+  color: #000000;
+  margin: 14px 71px;
+  display: block;
+  vertical-align: middle;
+}
+.navigation-menu li:nth-child(2) a {
+  margin-left: 12px;
+}
+.navigation-menu li:nth-child(3) a {
+      margin-right: 10px;
+      margin-left: 199px;
+}
+.navigation-menu li:last-child a {
+  margin-left: 148px;
 }
 .navigation-menu a:hover,
 .navigation-menu a:focus {
@@ -114,22 +124,22 @@ a {
 /*=========FOOTER=======*/
 .footer-main {
   display: flex;
-  justify-content: space-around;
-
   min-height: 48px;
   margin: 0;
   margin-top: 78px;
   padding: 36px 132px;
-
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #f6f6f6;
+}
+.background-opacity {
+  opacity: 0.9;
 }
 .social-tag {
- width: 400px;
- min-height: 16px;
+  width: 400px;
+  min-height: 16px;
 
- font-size: 21px;
- font-weight: 700;
- line-height: 26px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 }
 .footer-social {
   width: 400px;
@@ -146,11 +156,11 @@ a {
   background-color: #2a3a46;
   background-image: url("../img/icon-polygon.svg"), url("../img/bg-photo-sedona.jpg");
   background-repeat: no-repeat;
-  background-position: -1px 450px, 0px -83px;
+  background-position: -1px 450px, 0 -83px;
   background-size: auto, cover;
 }
 .intro-image {
- /* TODO: если этот метод позиционирование верен
+  /* TODO: если этот метод позиционирование верен
  то какой вариант лучше?*/
   /*margin-top: 75px;
   margin-left: 370px;
@@ -172,47 +182,45 @@ a {
 /* TODO: параграф двигается вместе с блоком пришлось
 его обернуть в div */
 .intro-title {
-  width: 440px;
+  width: 427px;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 
-  text-align: center;
-
-  font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
 }
 .intro-text {
   text-align: center;
-
-  color:#333333;
+  color: #333333;
 }
 .advantage-item {
   text-align: center;
 }
 .advantage-item h3 {
-  font-size: 21px;
   font-weight: 700;
+  font-size: 21px;
 }
 .advantage-item:first-child {
   color: #ffffff;
+
   background-color: #81b3d2;
 }
 .advantage-item .sublist {
   color: #000000;
+
   background-color: #eeeeee;
 }
 .search-question {
-  text-align: center;
-
-  font-size: 30px;
   font-weight: 700;
+  font-size: 30px;
   line-height: 36px;
+  text-align: center;
 }
 .search-text {
-  text-align: center;
-
   line-height: 24px;
+  text-align: center;
 }
 .hotel-search {
   width: 592px;
@@ -225,10 +233,10 @@ a {
   min-height: 86px;
   padding: 33px 139px;
 
-  color: #ffffff;
-  background-color: #766357;
-
   font-size: 21px;
+  color: #ffffff;
+
+  background-color: #766357;
 }
 .form-title:hover,
 .form-title:focus {
@@ -240,12 +248,11 @@ a {
   padding: 55px;
 }
 .hotel-search input {
-  text-transform:uppercase;
-
-  border: none;
-  background-color: #f2f2f2;
-
   font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
 }
 .hotel-search input:hover,
 .hotel-search input:focus {
@@ -256,38 +263,38 @@ a {
   line-height: 26px;
 }
 .button-calendar {
-  border: none;
   background-color: transparent;
+  border: none;
 }
 .button-search {
+  font-size: 21px;
+  color: #ffffff;
   text-transform: uppercase;
 
-  color: #ffffff;
-  border: none;
   background-color: #81b3d2;
-
-  font-size: 21px;
+  border: none;
 }
 .button-search:hover,
 .button-search:focus {
   background-color: #669ec0;
 }
 .button-search:active {
-  opacity: 0.3;
   color: #ffffff;
+
   background-color: #5496bd;
+  opacity: 0.3;
 }
 /*======HOTELS======*/
 .current-page {
-  color: #766357;
-
   font-weight: 700;
+  color: #766357;
 }
 .filters {
   width: 1200px;
   min-height: 215px;
 
   color: #ffffff;
+
   background-image: url("../img/bg-photo-sedona.jpg");
 }
 .form-wrapper {
@@ -297,38 +304,38 @@ a {
   width: 160px;
   min-height: 157px;
 
-  border: none;
-
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
+
+  border: none;
 }
 .filters-legend {
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
 }
 .price-band {
   width: 318px;
   min-height: 157px;
 }
 .price-band label {
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
 }
 .button-filter {
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  background-color: transparent;
-
   font-weight: 400;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
 }
 .button-filter:hover,
 .button-filter:focus {
   color: #000000;
+
   background-color: #ffffff;
 }
 .sorting-results {
   display: flex;
-
   min-height: 87px;
 
   border-bottom: 1px solid #e5e5e5;
@@ -338,8 +345,8 @@ a {
   margin-right: 49px;
   margin-left: 72px;
 
-  font-size: 21px;
   font-weight: 700;
+  font-size: 21px;
   line-height: 22px;
 }
 .sorting-title {
@@ -351,22 +358,20 @@ a {
 }
 .sort-by-type {
   display: flex;
-
   width: 282px;
 }
-.sort-by-type li:first-child~li {
+.sort-by-type li:first-child ~ li {
   margin-left: 33px;
 }
 .sort-button {
-  opacity: 0.3;
-  color: #000000;
-  border-bottom: 2px dotted #81b3d2;
-
   line-height: 18px;
+  color: #000000;
+
+  border-bottom: 2px dotted #81b3d2;
+  opacity: 0.3;
 }
 .sort-by-priority {
   display: flex;
-
   width: 34px;
 }
 .result-list {
@@ -375,7 +380,6 @@ a {
 }
 .result-item {
   display: flex;
-
   padding: 30px 72px;
 
   border-bottom: 1px solid #e5e5e5;
@@ -389,41 +393,44 @@ a {
   min-height: 90px;
 }
 .sort-button {
-  opacity: 0.3;
-  color: #000000;
-  border-bottom: 2px dotted #81b3d2;
-
   line-height: 18px;
+  color: #000000;
+
+  border-bottom: 2px dotted #81b3d2;
+  opacity: 0.3;
 }
 .sort-by-price {
-  opacity: 1;
   color: #81b3d2;
+
   border-bottom: none;
+  opacity: 1;
 }
 .hotel-link {
-  color: #000000;
-
-  font-size: 21px;
   font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
+  color: #000000;
 }
 .hotel-link:hover,
 .hotel-link:focus {
   color: #81b3d2;
 }
 .hotel-link:active {
-  opacity: 0.3;
   color: #000000;
+
+  opacity: 0.3;
 }
 .rating {
   width: 100px;
   min-height: 27px;
 
   color: #666666;
+
   background-color: #f2f2f2;
 }
 .button-describe {
   color: #ffffff;
+
   background-color: #81b3d2;
 }
 .button-describe:hover,
@@ -431,12 +438,14 @@ a {
   background-color: #669ec0;
 }
 .button-describe:active {
-  opacity: 0.3;
   color: #ffffff;
+
   background-color: #669ec0;
+  opacity: 0.3;
 }
 .button-booking {
   color: #ffffff;
+
   background-color: #766357;
 }
 .button-booking:hover,
@@ -444,7 +453,8 @@ a {
   background-color: #604e43;
 }
 .button-booking:active {
-  opacity: 0.3;
   color: #ffffff;
+
   background-color: #604e43;
+  opacity: 0.3;
 }
