@@ -165,11 +165,14 @@ input[type="radio"].visually-hidden {
 .background-opacity {
   background-color: rgba(255, 255, 255, 0.9);
 }
+.footer-hotels {
+  margin-top: 5px;
+}
 .social-tag {
   width: 400px;
   min-height: 16px;
   margin-top: 24px;
-  margin-right: 254px;
+  margin-right: 122px;
   margin-left: -1px;
 
   font-weight: 700;
@@ -183,13 +186,13 @@ input[type="radio"].visually-hidden {
 .social-network {
   display: flex;
   margin-top: 16px;
-  margin-right: 180px;
+  margin-right: 17px;
 }
 .button-social {
   display: block;
   width: 46px;
   height: 47px;
-  margin-right: 6px;
+  margin-right: 5px;
   padding: 14px 14px;
 }
 .button-social:hover,
@@ -307,15 +310,18 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 .search-text {
-  margin-bottom: 51px;
+  width: 441px;
+  margin: 0 auto;
 
   text-align: center;
+  text-indent: 47px;
 }
 .button-search-hotel {
   display: block;
   width: 568px;
   height: 86px;
   margin: 0 auto;
+  margin-top: 51px;
   margin-bottom: -1px;
   padding: 10px 10px;
 
@@ -436,10 +442,12 @@ label[for="number-of-children"] {
 .button-symbol {
   width: 38px;
   height: 38px;
-  color: #bdbdbd;
-  background-color: #f2f2f2;
+
   font-weight: 700;
   font-size: 28px;
+  color: #bdbdbd;
+
+  background-color: #f2f2f2;
 }
 .input-number {
   width: 39px;
@@ -596,7 +604,17 @@ label[for="number-of-children"] {
   margin-bottom: 7px;
 }
 .result-hotel-type {
-  margin-right: 36px;
+  display: block;
+  width: 95px;
+  margin-right: 21px;
+  margin-right: background-color: red;
+}
+.result-hotel-price {
+  display: block;
+  width: 64px;
+}
+.type-price-inner {
+  display: flex;
 }
 .sort-button {
   line-height: 18px;
