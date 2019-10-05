@@ -4,15 +4,17 @@
   font-family: "PT Sans";
 
   src: local("PT Sans"),
-  url("../fonts/ptsans.woff") format("woff");
+  url("../fonts/ptsans.woff") format("woff"),
+  url("../fonts/ptsans.woff2") format("woff2");
 }
 @font-face {
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   font-family: "PT Sans";
 
   src: local ("PT Sans"),
-  url("../fonts/ptsansbold.woff2") format("woff2"),;
+  url("../fonts/ptsansbold.woff") format("woff"),
+  url("../fonts/ptsansbold.woff2") format("woff2");
 }
 html {
   box-sizing: border-box;
@@ -62,6 +64,17 @@ input[type="radio"].visually-hidden {
   clip: rect(0,0,0,0);
   clip-path: inset(100%);
 }
+.button {
+  text-transform: uppercase;
+
+  border: none;
+}
+.button-brown {
+  background-color: #766357;
+}
+.button-blue {
+  background-color: #81b3d2;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -82,13 +95,22 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
 }
+.header-main {
+  position: relative;
+}
 .logo img {
   position: absolute;
-  top: -1px;
-  left: 840px;
+  top: 0;
+  left: 525px;
 
   display: block;
   width: 150px;
+}
+.main-menu {
+  display: flex;
+  min-height: 56px;
+
+  background-color: #ffffff;
 }
 .navigation-menu {
   display: flex;
@@ -135,7 +157,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   min-height: 48px;
   margin: 0;
-  margin-top: 81px;
+  margin-top: 80px;
   padding: 20px 132px;
 
   background-color: #ffffff;
@@ -146,9 +168,9 @@ input[type="radio"].visually-hidden {
 .social-tag {
   width: 400px;
   min-height: 16px;
-  margin-top: 26px;
+  margin-top: 24px;
   margin-right: 254px;
-  margin-left: 1px;
+  margin-left: -1px;
 
   font-weight: 700;
   font-size: 21px;
@@ -169,10 +191,17 @@ input[type="radio"].visually-hidden {
   height: 47px;
   margin-right: 6px;
   padding: 14px 14px;
-
-  background-color: #81b3d2;
 }
-
+.button-social:hover,
+.button-social:focus {
+  background-color: #5496bd;
+}
+.button-social:active {
+  background-color: #5496bd;
+}
+.button-social:active path {
+  fill: #87b5d1;
+}
 .footer-copyright {
   display: flex;
   width: 400px;
@@ -186,6 +215,9 @@ input[type="radio"].visually-hidden {
   margin-right: -17px;
   margin-left: 43px;
 }
+.copyright-link path {
+  stroke: #000000;
+}
 /*=======INDEX========*/
 .intro {
   min-height: 719px;
@@ -197,35 +229,26 @@ input[type="radio"].visually-hidden {
   background-size: auto, cover;
 }
 .intro-image {
-  /* TODO: если этот метод позиционирование верен
- то какой вариант лучше?*/
-  /*margin-top: 75px;
-  margin-left: 370px;
-  */
   position: relative;
   top: 75px;
   left: 370px;
 }
 .intro-wrapper {
   min-height: 216px;
-  /* не уверенна что это правильное решение но при
-  margin-bottom: 0px блок не двигается*/
   margin-top: 147px;
   padding-top: 61px;
 
   background-color: #ffffff;
 }
-
-/* TODO: параграф двигается вместе с блоком пришлось
-его обернуть в div */
 .intro-title {
-  width: 427px;
+  width: 430px;
   margin: 0 auto;
   margin-bottom: 27px;
-  font-size: 21px;
-  text-align: center;
+
   font-weight: 700;
+  font-size: 21px;
   line-height: 28px;
+  text-align: center;
 }
 .intro-text {
   text-align: center;
@@ -267,7 +290,7 @@ input[type="radio"].visually-hidden {
 .advantage-list:last-child {
   order: 1;
 }
-.sublist {
+.advantage-subitem {
   width: 400px;
 
   color: #000000;
@@ -275,7 +298,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 .search-question {
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 
   font-weight: 700;
   font-size: 30px;
@@ -284,22 +307,31 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 .search-text {
-  width: 435px;
-  margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: 51px;
 
-  line-height: 24px;
-  text-align: center;
   text-align: center;
 }
-.hotel-search {
+.button-search-hotel {
+  display: block;
+  width: 568px;
+  height: 86px;
+  margin: 0 auto;
+  margin-bottom: -1px;
+  padding: 10px 10px;
+
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+.form-modal {
   width: 567px;
-  height: 479px;
+  height: 396px;
   margin: 0 auto;
 
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
-.form-title {
+.search-hotel-button {
   min-height: 36px;
   margin-bottom: -26px;
   padding-top: 32px;
@@ -310,8 +342,6 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-size: 21px;
   color: #ffffff;
-
-  background-color: #766357;
 }
 .form-title:hover,
 .form-title:focus {
@@ -320,96 +350,107 @@ input[type="radio"].visually-hidden {
 .form-inputs {
   width: 566px;
   min-height: 200px;
-  padding-top: 40px;
-  padding-right: 49px;
-  padding-left: 56px;
+  padding: 55px 53px 56px 56px;
+
   background-color: #ffffff;
 }
-.form-inputs:first-child {
-  margin-bottom: 15px;
+.input-date-wrapper {
+  margin-top: -14px;
+  margin-bottom: 17px;
+}
+.input-date-wrapper p {
+  position: relative;
+
+  display: flex;
+  width: 458px;
+  height: 39px;
+}
+.input-date-wrapper p:first-child {
+  margin-bottom: 27px;
+}
+.input-date-wrapper label {
+  display: block;
+  width: 96px;
+  margin-top: 7px;
+  margin-right: 15px;
+
+  font-weight: 700;
+  line-height: 26px;
 }
 .hotel-search input {
   height: 28px;
-  padding: 18px 12px;
-  border: none;
+  padding: 19px 12px;
+
   font-weight: 700;
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-}
-.hotel-search label {
-  margin-right: 18px;
-
-  font-weight: 700;
-  line-height: 26px;
+  border: none;
 }
 .hotel-search input:hover,
 .hotel-search input:focus {
   background-color: #ebebeb;
 }
+
 .input-date {
   width: 346px;
   height: 28px;
   padding: 16px 12px;
 }
-.input-date-wrapper p:first-child {
-  margin-bottom: 31px;
-}
-.input-date-wrapper {
-  margin-bottom: 20px;
-}
 .button-calendar {
   position: absolute;
-
-  display: none;
+  top: 7px;
+  left: 420px;
 
   background-color: transparent;
 }
-.input-number {
-  width: 38px;
-  height: 38px;
+.button-calendar path {
+  stroke: #bdbdbd;
 }
 .input-number-wrapper {
   display: flex;
-  margin-bottom: 43px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 .input-number-wrapper p {
-  position: relative;
-
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+.input-number-wrapper label {
   display: block;
-  width: 190px;
-  margin-right: 91px;
+  width: 73px;
+  width: 72px;
+  margin-top: 8px;
+  margin-right: 40px;
+
+  font-weight: 700;
+}
+label[for="number-of-children"] {
+  margin-right: -7px;
 }
 .input-number-wrapper p:last-child {
   margin-right: 0;
 }
-.input-number-wrapper label {
-  margin-right: 72px;
+.button-symbol {
+  width: 38px;
+  height: 38px;
+  color: #bdbdbd;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  font-size: 28px;
 }
-
-.input-number-wrapper label::before {
-  content: "";
-  position: absolute;
-  left: 113px;
-
-  display: block;
-  width: 35px;
-  height: 36px;
-
-  background-color: green;
-  /* background-image: url("../img/icon-minus.svg"); */
+.input-number {
+  width: 39px;
+  height: 38px;
 }
 .button-search {
-  width: 100%;
-  height: 55px;
-  margin-bottom: 53px;
-  border: none;
-  font-size: 21px;
+  width: 455px;
+  height: 57px;
+
   font-size: 21px;
   color: #ffffff;
-  text-transform: uppercase;
-
-  background-color: #81b3d2;
 }
 .button-search:hover,
 .button-search:focus {
@@ -450,8 +491,6 @@ input[type="radio"].visually-hidden {
 
   font-weight: 700;
   font-size: 16px;
-
-  border: none;
 }
 .filters-legend {
   font-weight: 700;
@@ -556,7 +595,7 @@ input[type="radio"].visually-hidden {
   margin-top: -3px;
   margin-bottom: 7px;
 }
-.results-wrapper h3 + span {
+.result-hotel-type {
   margin-right: 36px;
 }
 .sort-button {
@@ -604,8 +643,6 @@ input[type="radio"].visually-hidden {
   padding: 6px 16px;
 
   color: #ffffff;
-
-  background-color: #81b3d2;
 }
 .button-describe:hover,
 .button-describe:focus {
@@ -621,8 +658,6 @@ input[type="radio"].visually-hidden {
   padding: 6px 17px;
 
   color: #ffffff;
-
-  background-color: #766357;
 }
 .button-booking:hover,
 .button-booking:focus {
