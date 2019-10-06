@@ -532,24 +532,47 @@ label[for="number-of-children"] {
 }
 .form-wrapper {
   display: flex;
-  padding: 19px 72px;
+  padding: 19px 68px;
 }
 .form-fielsed-wrapper {
   display: flex;
   width: 400px;
-
+  margin-right: 340px;
   background-color: green;
 }
 .filters-fieldset {
   width: 200px;
   min-height: 157px;
-
   font-weight: 700;
   font-size: 16px;
 }
-.filters-legend {
+.filters-fieldset:first-child {
+  margin-right: 86px;
+  margin-left: -8px;
+}
+.filter-legends {
   font-weight: 700;
   font-size: 16px;
+  margin-bottom: 29px;
+}
+.filters-item {
+  margin-bottom: 24px;
+  padding-left: 10px;
+}
+.filters-item label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.filters-input-checkbox + label::before {
+  content: " ";
+  top: -4px;
+  left: -9px;
+  width: 23px;
+  height: 23PX;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  position: absolute;
 }
 .price-wrapper {
   width: 400px;
