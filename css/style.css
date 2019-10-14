@@ -725,7 +725,7 @@ label[for="number-of-children"] {
   font-weight: 700;
   font-size: 16px;
 }
-.filter-price-gamut {
+.filter-price-outputs {
   position: relative;
 
   display: flex;
@@ -737,7 +737,7 @@ label[for="number-of-children"] {
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
-.filter-price-gamut::before {
+.filter-price-outputs::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -749,35 +749,11 @@ label[for="number-of-children"] {
   background-color: #ffffff;
 }
 .min-price {
-  position: relative;
-
   margin-right: 141px;
   margin-left: 38px;
 }
-.min-price::before {
-  content: "от";
-  position: absolute;
-  top: 2px;
-  left: -21px;
-
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.max-price {
-  position: relative;
-}
-.max-price::before {
-  content: "до";
-  position: absolute;
-  top: 1px;
-  left: -23px;
-
-  color: #ffffff;
-  text-transform: uppercase;
-}
 .price-range-input {
   position: relative;
-
   width: 317px;
   height: 2px;
 

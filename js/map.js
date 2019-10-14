@@ -1,22 +1,25 @@
+
 ymaps.ready(init);
-function init(){
-  var mapSedona=new ymaps.Map('interactive-map',{
-    center:[34.86, 111.76], zoom: 10
-  });
-/* создание метки
- sedonaGeoOdject=new.ymaps.GeoOdject({
-   geometry: {
-    type: 'Point',
-    coordinates: [34.86, 111.76]
-   },
-   properties: {
-     iconContent: 'Sedona'
-   },
- }, {
-   present: 'islands#blackStretchyIcon',
-   draggable: false
-   }
- }),
- mapSedona.GeoObject
-*/
+function init() {
+  var myMap = new ymaps.Map('map', {
+    center: [34.869497, -111.760186],
+    zoom: 10
+    }, {
+        searchControlProvider: 'yandex#search'
+        }),
+          myGeoObject = new ymaps.GeoObject({
+            geometry: {
+                type: 'Point',
+                coordinates: [34.869497, -111.760186]
+            },
+            properties: {
+                iconContent: 'Sedona',
+                hintContent: 'Город'
+            }
+        }, {
+            preset: 'islands#blueStretchyIcon',
+            draggable: false
+        });
+    myMap.geoObjects
+        .add(myGeoObject)
 }

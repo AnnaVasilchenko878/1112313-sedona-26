@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Гостиницы | Седона</title>
@@ -66,9 +65,11 @@
               <div class="price-wrapper">
               <div class="price-band">
                 <label for="filter-price-range">Стоимость в сутки (р):</label>
-                <p class="filter-price-gamut">
-                  <output class="min-price" name="min-price">0</output>
-                  <output class="max-price" name="max-price">3000</output>
+                <p class="filter-price-outputs">
+                  <label for="filter-min">от</label>
+                  <output class="min-price" id="filter-min" name="min-price">0</output>
+                  <label for="filter-max">до</label>
+                  <output class="max-price" id="filter-max" name="max-price">3000</output>
                 </p>
                 <input class="price-range-input" type="range" name="price-range" id="filter-price-range" min="0" max="3000" step="50" value="2550">
               </div>
