@@ -433,22 +433,30 @@ input[type="radio"].visually-hidden {
 
   background-color: #503e33;
 }
+/*=======Анимация====== */
+/* @keyframes modal-close {
+  0% {
+    height: 396px;
+    padding: 102px
+
+  }
+  100% {
+    height: 0px;
+    padding: 0px;
+  }
+}*/
 .hotel-search-modal {
+  /* animation-name: modal-close; */
+  /* animation-duration: 2s; */
+  /* animation-fill-mode: forward; */
   position: absolute;
   top: 2px;
   left: 317px;
 
-  display: block;
   width: 567px;
   height: 396px;
 
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-}
-@keyframes {
-  0% {
-    left: 0px;
-    
-  }
 }
 .form-inputs {
   width: 566px;
@@ -591,6 +599,10 @@ label[for="number-of-children"] {
   background-color: #5496bd;
   opacity: 0.3;
 }
+.sedona-map {
+  width: 1200px;
+  height: 594px;
+}
 .sedona-map img {
   background-color: #f5f4ef;
 }
@@ -607,6 +619,7 @@ label[for="number-of-children"] {
 
   background-color: #2a3a46;
   background-image: url("../img/filter-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 -290px;
 }
