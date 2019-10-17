@@ -9,6 +9,7 @@
 </head>
 
 <body class="inner-page">
+
   <div class="container">
     <header class="header-main">
       <nav class="main-menu">
@@ -66,17 +67,20 @@
             </div>
             <div class="price-wrapper">
               <div class="price-band">
-                <label for="filter-price-range">Стоимость в сутки (р):</label>
-                  <p class="filter-price-outputs">
+                  <label for="filter-price-range">Стоимость в сутки (р):</label>
+                  <p class="filter-price-inputs">
                     <label for="filter-min">от</label>
-                    <output class="min-price" id="filter-min" name="min-price">0</output>
+                    <input class="input-price input-min" type="text" name="min-price" value="0"/>
                     <label for="filter-max">до</label>
-                    <output class="max-price" id="filter-max" name="max-price">3000</output>
+                    <input class="input-price input-max" type="text" name="max-price" value="3500"/>
                   </p>
-                <input class="input-range" type="range" name="price-range" id="filter-price-range" min="0" max="3000" step="50" value="2550">
-              </div>
+                  <div class="range-controls">
+                    <div class="range-bar"></div>
+                  </div>
+               </div>
               <button class="button button-filter" type="submit">Показать</button>
-            </div>
+
+             </div>
           </div>
         </form>
       </section>
