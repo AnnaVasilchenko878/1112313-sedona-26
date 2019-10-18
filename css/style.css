@@ -129,7 +129,7 @@ input[type="radio"].visually-hidden {
  text-align: left;
 }
 .navigation-menu li:nth-child(3) a {
- margin-right: 16px;
+ margin-right: 10px;
  margin-left: 199px;
 
  text-align: right;
@@ -315,7 +315,7 @@ input[type="radio"].visually-hidden {
  width: 367px;
 }
 .advantage-item:nth-child(2) h3 {
- width: 150px;
+ width: 152px;
  margin-top: -5px;
  margin-bottom: 31px;
 }
@@ -783,7 +783,7 @@ label[for="number-of-children"] {
  flex-wrap: wrap;
  margin-top: 8px;
  margin-bottom: 19px;
- padding: 3px 47px;
+ padding: 0 47px;
 
  border: 2px solid #ffffff;
  border-radius: 2px;
@@ -802,7 +802,7 @@ label[for="number-of-children"] {
 .filter-price-inputs label {
   margin-top: 7px;
  font-weight: 400;
- margin-left: 18px;
+ margin-left: 16px;
 
 }
 .input-price {
@@ -811,7 +811,8 @@ label[for="number-of-children"] {
   border: none;
   background: none;
   color: inherit;
-  margin-top: 4px;
+  font-size: 16px;
+  margin-top: 5px;
 }
 .input-min {
   margin-right: 71px;
@@ -984,19 +985,19 @@ label[for="number-of-children"] {
 
  display: flex;
  flex-wrap: wrap;
- padding: 31px 74px;
+ padding: 30px 71px;
 
  border-bottom: 1px solid #e5e5e5;
 }
 .results-wrapper {
  margin-right: 521px;
- width: 259px;
+ width: 261px;
 }
 .rating-wrapper {
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- width: 100px;
+ width: 110px;
 }
 .rating-star{
  background-image: url("../img/icon-star.svg");
@@ -1004,7 +1005,8 @@ label[for="number-of-children"] {
  background-size: contain;
  background-position: 0 center;
  height: 17px;
- max-width: 105px;
+ max-width: 83px;
+ margin-left: 25px;
  margin-top: 0;
 }
 .rating-desert {
@@ -1026,7 +1028,7 @@ label[for="number-of-children"] {
  width: 133px;
  height: 90px;
  margin-top: 1px;
- margin-right: 27px;
+ margin-right: 31px;
 }
 .result-wrapper {
  width: 260px;
@@ -1043,7 +1045,7 @@ label[for="number-of-children"] {
 }
 .result-hotel-price {
  display: block;
- width: 64px;
+ width: 68px;
 }
 .type-price-inner {
  display: flex;
