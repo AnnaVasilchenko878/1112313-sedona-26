@@ -3,16 +3,16 @@
  font-weight: 400;
  font-family: "PT Sans";
 
- src: local("PT Sans"),
+ src: local("PT Sans-Regular"),
  url("../fonts/ptsans.woff") format("woff"),
  url("../fonts/ptsans.woff2") format("woff2");
 }
 @font-face {
- font-style: bold;
+ font-style: normal;
  font-weight: 700;
  font-family: "PT Sans";
 
- src: local("PT Sans"),
+ src: local("PT Sans-Bold"),
  url("../fonts/ptsansbold.woff") format("woff"),
  url("../fonts/ptsansbold.woff2") format("woff2");
 }
@@ -67,7 +67,7 @@ input[type="radio"].visually-hidden {
 }
 .button {
  text-transform: uppercase;
-
+ font-weight: 700;
  border: none;
 
  transition-duration: 0.3s;
@@ -155,7 +155,7 @@ input[type="radio"].visually-hidden {
  color: #81b3d2;
 }
 .navigation-menu a:active {
- color: rgba(255, 255, 255, 0.3);
+ color: #cccccc;
 }
 .navigation-menu .navigation-current-page,
 .navigation-menu .navigation-current-page:hover,
@@ -171,7 +171,7 @@ input[type="radio"].visually-hidden {
  z-index: 3;
  background-color: #ffffff;
 }
-.opacity {
+.footer-opacity {
  position: absolute;
  bottom: -6px;
 
@@ -179,7 +179,7 @@ input[type="radio"].visually-hidden {
 }
 .social-tag {
  width: 400px;
- margin-top: 49px;
+ margin-top: 47px;
 
  font-weight: 700;
  font-size: 21px;
@@ -193,7 +193,7 @@ input[type="radio"].visually-hidden {
 .social-network {
  display: flex;
  flex-wrap: wrap;
- margin-top: 39px;
+ margin-top: 36px;
  margin-left: 125px;
 }
 .button-social {
@@ -204,7 +204,7 @@ input[type="radio"].visually-hidden {
  height: 47px;
  margin-right: 5px;
  margin-bottom: 5px;
- padding: 14px 14px;
+ justify-content: center;
 }
 .button-social:hover,
 .button-social:focus {
@@ -221,7 +221,7 @@ input[type="radio"].visually-hidden {
  flex-wrap: wrap;
  width: 400px;
  min-height: 41px;
- padding: 30px 0;
+ padding: 26px 0;
 
  text-align: center;
 }
@@ -258,7 +258,7 @@ input[type="radio"].visually-hidden {
 }
 .intro-wrapper {
  min-height: 216px;
- margin-top: 151px;
+ margin-top: 150px;
  padding-top: 65px;
 
  background-color: #ffffff;
@@ -327,7 +327,7 @@ input[type="radio"].visually-hidden {
 }
 .advantage-item-wrapper {
  width: 400px;
- padding: 51px 59px 30px 59px;
+ padding: 49px 59px 30px 59px;
 
  color: #ffffff;
 
@@ -340,7 +340,7 @@ input[type="radio"].visually-hidden {
  display: block;
  width: 113px;
  margin: 0 auto;
- margin-bottom: 25px;
+ margin-bottom: 30px;
 
  font-weight: 700;
  font-size: 21px;
@@ -356,7 +356,7 @@ input[type="radio"].visually-hidden {
  text-align: center;
 }
 .background-grey .advantage-subitem {
- padding: 48px 63px 43px 63px;
+ padding: 45px 63px 43px 63px;
 
  color: #000000;
 
@@ -365,7 +365,7 @@ input[type="radio"].visually-hidden {
 .icon-items .advantage-subitem {
  position: relative;
 
- padding: 161px 27px 69px 27px;
+ padding: 161px 50px 69px 50px;
 }
 .advantage-subitem::before {
  content: "";
@@ -400,7 +400,7 @@ input[type="radio"].visually-hidden {
 }
 .search-question {
  margin: 0 391px;
- margin-bottom: 27px;
+ margin-bottom: px;
 
  font-weight: 700;
  font-size: 30px;
@@ -410,7 +410,7 @@ input[type="radio"].visually-hidden {
 .search-text {
  width: 441px;
  margin: 0 auto;
- margin-bottom: -3px;
+ margin-bottom: 4px;
 
  text-align: center;
 }
@@ -420,7 +420,7 @@ input[type="radio"].visually-hidden {
  margin: 0 auto;
  margin-top: 51px;
  margin-bottom: -26px;
- padding: 31px 139px;
+ padding: 33px 139px;
 
  font-weight: 700;
  font-size: 21px;
@@ -450,10 +450,11 @@ input[type="radio"].visually-hidden {
  width: 566px;
  min-height: 200px;
  padding: 56px 53px 56px 56px;
-
  background-color: #ffffff;
 }
-
+.form-inputs input::placeholder{
+  color: #000000;
+}
 .input-date-wrapper {
  margin-top: -14px;
  margin-bottom: 15px;
@@ -481,9 +482,9 @@ input[type="radio"].visually-hidden {
 .hotel-search input {
  height: 38px;
  padding-top: 6px;
- padding-right: 12px;
+ padding-right: 10px;
  padding-bottom: 5px;
- padding-left: 12px;
+ padding-left: 8px;
 
  font-weight: 700;
  text-transform: uppercase;
@@ -782,8 +783,8 @@ label[for="number-of-children"] {
  display: flex;
  flex-wrap: wrap;
  margin-top: 8px;
- margin-bottom: 19px;
- padding: 0 47px;
+ margin-bottom: 23px;
+ padding: 1px 40px;
 
  border: 2px solid #ffffff;
  border-radius: 2px;
@@ -800,9 +801,11 @@ label[for="number-of-children"] {
  background-color: #ffffff;
 }
 .filter-price-inputs label {
-  margin-top: 7px;
+  margin-top: 5px;
  font-weight: 400;
- margin-left: 16px;
+ margin-left: 24px;
+ margin-right:3px;
+ font-size: 14px;
 
 }
 .input-price {
@@ -811,62 +814,50 @@ label[for="number-of-children"] {
   border: none;
   background: none;
   color: inherit;
-  font-size: 16px;
-  margin-top: 5px;
+  font-size: 14px;
+  margin-top: 3px;
 }
 .input-min {
-  margin-right: 71px;
-}
-.range-controls {
-  position: relative;
+  margin-right: 67px;
 }
 .range-bar {
  width: 317px;
  height: 2px;
+ position: relative; 
 
  background-color: #ffffff;
 }
-.range-bar::before {
- content: " ";
+.range-min,
+.range-max {
  position: absolute;
  width: 20px;
  height: 20px;
  top: -8px;
+ display: block;
 
  background-color: #ababab;
  border: 8px solid #ffffff;
  border-radius: 50%;
  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
-.range-bar:hover::before,
-.range-bar:focus::before{
- -webkit-transform: scale(1.1);
-         transform: scale(1.1);
+.range-max {
+  left: 251px;
 }
-.range-bar::after {
- content: " ";
- position: absolute;
- width: 20px;
- height: 20px;
- top:-8px;
- left: 251px;
- background-color: #ababab;
- border: 8px solid #ffffff;
- border-radius: 50%;
- box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+.range-min:hover,
+.range-min:focus{
+  border-width: 9px;
+  width: 22px;
+  height: 22px;
 }
-.range-bar:hover::after,
-.range-bar:focus::after{
- transform: scale(1.1);
-}
-.range-bar:hover::before,
-.range-bar:focus::before {
- -webkit-transform: scale(1.1);
-         transform: scale(1.1);
+.range-max:hover,
+.range-max:focus{
+  border-width: 9px;
+  width: 22px;
+  height: 22px;
 }
 .button-filter {
  margin-left: 88px;
- padding: 7px 34px;
+ padding: 9px 34px;
 }
 .button-filter {
  font-weight: 400;
@@ -885,7 +876,7 @@ label[for="number-of-children"] {
  display: flex;
  flex-wrap: wrap;
  align-items: center;
- min-height: 87px;
+ min-height: 91px;
 
  border-bottom: 1px solid #e5e5e5;
 }
@@ -1027,8 +1018,7 @@ label[for="number-of-children"] {
 .result-image {
  width: 133px;
  height: 90px;
- margin-top: 1px;
- margin-right: 31px;
+ margin-right: 32px;
 }
 .result-wrapper {
  width: 260px;
@@ -1090,7 +1080,6 @@ label[for="number-of-children"] {
 }
 .button-booking {
  padding: 5px 17px;
-
  color: #ffffff;
 }
 .button-booking:hover,
