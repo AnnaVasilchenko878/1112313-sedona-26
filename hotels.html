@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Гостиницы | Седона</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body class="inner-page">
@@ -67,12 +67,12 @@
             </div>
             <div class="price-wrapper">
               <div class="price-band">
-                  <label for="filter-price-range">Стоимость в сутки (р):</label>
+                  <label>Стоимость в сутки (р):</label>
                   <p class="filter-price-inputs">
                     <label for="filter-min">от</label>
-                    <input class="input-price input-min" type="text" name="min-price" value="0"/>
+                    <input class="input-price input-min"  type="text" name="min-price" id="filter-min" value="0"/>
                     <label for="filter-max">до</label>
-                    <input class="input-price input-max" type="text" name="max-price" value="3000"/>
+                    <input class="input-price input-max" type="text" name="max-price" id="filter-max" value="3000"/>
                   </p>
                     <div class="range-bar">
                       <div class="range-min"></div>
