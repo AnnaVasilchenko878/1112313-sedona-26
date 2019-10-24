@@ -261,7 +261,7 @@ input[type="radio"].visually-hidden {
   background-color: #2a3a46;
   background-image: url("../img/icon-polygon.svg"), url("../img/bg-photo-sedona.jpg");
   background-repeat: no-repeat;
-  background-position: -1px 451px, 0 -83px;
+  background-position: -1px 452px, 0 -83px;
   background-size: auto, cover;
 }
 .intro-image {
@@ -271,7 +271,7 @@ input[type="radio"].visually-hidden {
 }
 .intro-wrapper {
   min-height: 216px;
-  margin-top: 150px;
+  margin-top: 153px;
   padding-top: 65px;
 
   background-color: #ffffff;
@@ -279,7 +279,7 @@ input[type="radio"].visually-hidden {
 .intro-title {
   width: 430px;
   margin: 0 auto;
-  margin-top: -7px;
+  margin-top: -6px;
   margin-bottom: 28px;
 
   font-weight: 700;
@@ -297,7 +297,7 @@ input[type="radio"].visually-hidden {
   color: #333333;
 }
 .advantage {
-  margin-bottom: 53px;
+  margin-bottom: 60px;
 }
 .advantage-list {
   display: flex;
@@ -353,7 +353,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 113px;
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 35px;
 
   font-weight: 700;
   font-size: 21px;
