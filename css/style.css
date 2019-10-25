@@ -190,7 +190,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 .footer-hotels .social-tag {
-  margin-top: 46px;
+  margin-top: 43px;
 }
 .footer-social {
   width: 400px;
@@ -199,11 +199,11 @@ input[type="radio"].visually-hidden {
 .social-network {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 46px;
+  margin-top: 44px;
   margin-left: 125px;
 }
 .footer-hotels .social-network {
-  margin-top: 36px;
+  margin-top: 33px;
 }
 .button-social {
   display: flex;
@@ -235,7 +235,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 .footer-hotels .footer-copyright {
-  padding-top: 25px;
+  padding-top: 23px;
 }
 .footer-copyright span {
   display: block;
@@ -256,12 +256,11 @@ input[type="radio"].visually-hidden {
 /*=======INDEX========*/
 .intro {
   min-height: 719px;
-  margin-bottom: -3px;
 
   background-color: #2a3a46;
   background-image: url("../img/icon-polygon.svg"), url("../img/bg-photo-sedona.jpg");
   background-repeat: no-repeat;
-  background-position: -1px 452px, 0 -83px;
+  background-position: -1px 450px, 0 -83px;
   background-size: auto, cover;
 }
 .intro-image {
@@ -271,7 +270,7 @@ input[type="radio"].visually-hidden {
 }
 .intro-wrapper {
   min-height: 216px;
-  margin-top: 153px;
+  margin-top: 149px;
   padding-top: 65px;
 
   background-color: #ffffff;
@@ -290,14 +289,14 @@ input[type="radio"].visually-hidden {
 .intro-text {
   width: 498px;
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 
   line-height: 26px;
   text-align: center;
   color: #333333;
 }
 .advantage {
-  margin-bottom: 60px;
+  margin-bottom: 54px;
 }
 .advantage-list {
   display: flex;
@@ -353,7 +352,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 113px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 
   font-weight: 700;
   font-size: 21px;
@@ -887,7 +886,7 @@ label[for="number-of-children"] {
 }
 .button-filter {
   margin-left: 88px;
-  padding: 9px 34px;
+  padding: 7px 34px;
 }
 .button-filter {
   font-weight: 400;
@@ -1023,7 +1022,7 @@ label[for="number-of-children"] {
 .rating-star {
   max-width: 83px;
   height: 17px;
-  margin-top: 0;
+  margin-top: -4px;
   margin-left: 25px;
 
   background-image: url("../img/icon-star.svg");
@@ -1056,8 +1055,8 @@ label[for="number-of-children"] {
   min-height: 90px;
 }
 .result-title {
-  margin-top: -3px;
-  margin-bottom: 4px;
+  margin-top: -8px;
+  margin-bottom: 7px;
 }
 .result-hotel-type {
   display: block;
