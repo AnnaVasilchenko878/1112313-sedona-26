@@ -275,7 +275,7 @@ input[type="radio"].visually-hidden {
 }
 .intro-wrapper {
   min-height: 216px;
-  margin-top: 149px;
+  margin-top: 148px;
   padding-top: 57px;
 
   background-color: #ffffff;
@@ -361,7 +361,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 120px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   font-weight: 700;
   font-size: 21px;
