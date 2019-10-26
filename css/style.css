@@ -276,15 +276,15 @@ input[type="radio"].visually-hidden {
 .intro-wrapper {
   min-height: 216px;
   margin-top: 149px;
-  padding-top: 65px;
+  padding-top: 57px;
 
   background-color: #ffffff;
 }
 .intro-title {
-  width: 430px;
+  width: 439px;
   margin: 0 auto;
-  margin-top: -6px;
-  margin-bottom: 29px;
+  margin-top: 6px;
+  margin-bottom: 27px;
 
   font-weight: 700;
   font-size: 21px;
@@ -360,14 +360,14 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 120px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 
   font-weight: 700;
   font-size: 21px;
   text-align: center;
 }
 .advantage-number {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .advantage-sublist {
   display: flex;
@@ -386,7 +386,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 .background-grey .advantage-number {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 .text-margin {
   width: 246px;
@@ -425,7 +425,7 @@ input[type="radio"].visually-hidden {
   background-position: center;
 }
 .advantage-subitem .advantage-subtitle {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 .search-hotel {
   position: relative;
@@ -725,7 +725,7 @@ input[name="number-of-children"] {
   display: flex;
   flex-wrap: wrap;
   padding: 6px 69px;
-  padding-bottom: 7px;
+  padding-bottom: 31px;
 }
 .form-fielsed-wrapper {
   display: flex;
@@ -759,6 +759,9 @@ input[name="number-of-children"] {
 .filters-item {
   margin-bottom: 25px;
   padding-left: 9px;
+}
+.filters-item:last-child {
+  margin-bottom: 0;
 }
 .filters-item label {
   position: relative;
@@ -1094,7 +1097,7 @@ input[name="number-of-children"] {
 .result-hotel-type {
   display: block;
   width: 95px;
-  margin-right: 21px;
+  margin-right: 22px;
 }
 .result-hotel-price {
   display: block;
