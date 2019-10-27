@@ -178,7 +178,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 6px;
 
-
   background-color: rgba(255, 255, 255, 0.9);
 }
 .social-tag {
@@ -231,7 +230,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 400px;
   min-height: 41px;
-  margin-top:39px;
+  margin-top: 39px;
   padding-bottom: 22px;
 
   text-align: center;
@@ -246,9 +245,9 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
 }
 .footer-hotels span {
+  margin-top: 7px;
   margin-right: -5px;
   margin-left: 89px;
-  margin-top: 7px;
 }
 .copyright-link:hover .html-academy-logo,
 .copyright-link:focus .html-academy-logo {
@@ -445,8 +444,8 @@ input[type="radio"].visually-hidden {
   width: 441px;
   margin: 0 auto;
   margin-bottom: 4px;
-  line-height: 24px;
 
+  line-height: 24px;
   text-align: center;
 }
 .button-search-hotel {
@@ -837,7 +836,6 @@ input[name="number-of-children"] {
   margin-bottom: 20px;
   padding: 0 40px;
 
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -950,17 +948,18 @@ input[name="number-of-children"] {
 }
 .sorting-title {
   width: 75px;
-  margin-right: 16px;
   margin-top: 13px;
+  margin-right: 16px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
 }
 .sort-by-type {
   display: flex;
-  margin-top: 3px;
   flex-wrap: wrap;
   width: 400px;
+  margin-top: 3px;
   margin-right: 366px;
 }
 .sort-by-type li {
@@ -1011,8 +1010,8 @@ input[name="number-of-children"] {
   margin-top: 4px;
 }
 .sort-arrow {
-  margin-right: 12px;
   margin-top: 45px;
+  margin-right: 12px;
 }
 .sort-arrow path {
   fill: #cacaca;
@@ -1107,8 +1106,8 @@ input[name="number-of-children"] {
   display: flex;
 }
 .hotel-link {
-  padding-left: 2px;
   width: 250px;
+  padding-left: 2px;
 
   font-weight: 700;
   font-size: 21px;
